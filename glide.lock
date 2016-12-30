@@ -1,0 +1,8 @@
+hash: 83420b7912b7e59b4acc4d6f493039ce89ff16ba85a0f22b2307559a1bc34c1f
+updated: 2016-12-30T16:05:36.091034479-05:00
+imports:
+- name: github.com/goreleaser/releaser
+  version: e3edf895231fe4d7d176576186519e130fcdd6d9
+testImports:
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
