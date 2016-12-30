@@ -1,7 +1,7 @@
 repo: fprieur/wb2d
 binary_name: wb2d
 build:
-  main: ./cmd/main.go
+  main: ./main.go
   oses:
     - darwin
     - freebsd
