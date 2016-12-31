@@ -8,3 +8,5 @@ build:
     - linux
   arches:
     - amd64
+brew:
+  repo: fprieur/wb2d
