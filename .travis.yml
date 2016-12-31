@@ -8,3 +8,15 @@ script:
 after_success: test ! -z "$TRAVIS_TAG" && curl -s https://raw.githubusercontent.com/goreleaser/get/master/latest | bash
 notifications:
   email: false
+deploy:
+  provider: releases
+  api_key:
+    secure: oFiQTnZbw1vondR63xpelZXYQQfds0lWsFgO4MSJiZdVv+rCzbGGh+mS94yIGbBpQ/NdmFfxBrL2pdV/1N5sWXIDj7YTTzlh26Zn5fiRX6GpiftrVPiTxYvRZYZtztSxeduFjozJw7y2QqS7Dp3nbVD9XSEP4oAmQgBxtRhQx7OhPzvLl5DUhdSpqYPLtzLraLUr3J6cX/MwAVEgwNgtRPwHFAtiy1j7auJctP10xp6la5D5TizBi5/jYRpA4MYfgtJtYEnuK6bXn/gWYjYKF6vjD6cUZWxt1T2HTmU8jkoxcycTJY43zo5eFUqFoc4CD9FNzvb8aVIACNIM8jvtP17vhXblGVbIjK8nruwvzcUAHUh8KEnfkaJVX16YbJ8aBFGbiTXqAd0PgloDhkD7KICfoiK2tiHEB/fjjMPuXKR9PSQHNxPPPt5y1TCOm23MxHJ9XzkBiDnppsMBz+Fhl6Xpgq54SEiZXHpBwIJNzK5t4azMKoS+FtHH6OZC1f0BRteMk8dnPMtaojdNfRX/ihrXh5nEERsTQIDcFBoenmpoNGMGrKKsBJu/3CFdzGw2sEKbM/rOOQx/DJrrxGjCMqPDwUWH4O/LMxKswghYLIGXEFoX6EOpAl0+n3TVzWtPDfP4JVpl/iNyiUOmbLXXWrpIMnMuLUE8okcl//hJTt4=
+  file:
+    - 'dist/wb2d_Darwin_x86_64.tar.gz'
+    - 'dist/wb2d_Windows_x86_64.tar.gz'
+    - 'dist/wb2d_Linux_x86_64.tar.gz'
+  on:
+    repo: fprieur/wb2d
+  on:
+    tags: true
