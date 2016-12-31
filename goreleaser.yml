@@ -1,5 +1,7 @@
 repo: fprieur/wb2d
 binary_name: wb2d
+brew:
+  repo: fprieur/wb2d-homebrew-formulea
 build:
   main: ./main.go
   oses:
@@ -8,5 +10,3 @@ build:
     - linux
   arches:
     - amd64
-brew:
-  repo: fprieur/wb2d-homebrew-formulea
