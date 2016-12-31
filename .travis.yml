@@ -18,6 +18,8 @@ deploy:
     - 'dist/wb2d_Windows_x86_64.tar.gz'
     - 'dist/wb2d_Linux_x86_64.tar.gz'
   on:
-    repo: fprieur/wb2d
+    repo:
+      - 'fprieur/wb2d'
+      - 'fprieur/wb2d-homebrew-formulea'
   on:
     tags: true
