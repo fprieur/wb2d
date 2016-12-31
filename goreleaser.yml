@@ -4,6 +4,7 @@ build:
   main: ./main.go
   oses:
     - darwin
-    - freebsd
+    - windows
+    - linux
   arches:
     - amd64
