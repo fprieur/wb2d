@@ -1,7 +1,11 @@
 repo: fprieur/wb2d
 binary_name: wb2d
+brew:
+  repo: fprieur/wb2d-homebrew-formulea
 build:
   oses:
     - darwin
     - windows
     - linux
+  arches:
+    - amd64
