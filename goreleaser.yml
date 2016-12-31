@@ -9,4 +9,4 @@ build:
   arches:
     - amd64
 brew:
-  repo: fprieur/wb2d
+  repo: fprieur/wb2d-homebrew-formulea
