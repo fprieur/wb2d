@@ -36,5 +36,5 @@ func TimeBetweenTwoDate(time1 string, time2 string) string {
 
 	weeksBetweenTwoDates := strconv.Itoa(i)
 
-	return  weeksBetweenTwoDates + " week(s)"
+	return  weeksBetweenTwoDates + " week(s) "
 }
