@@ -1,9 +1,13 @@
 release:
-  repo: fprieur/wb2d
+  github: 
+    owner: fprieur
+    name: wb2d
 brew:
-  repo: fprieur/wb2d-homebrew-formulea
+  github: 
+    owner: fprieur
+    name: wb2d-homebrew-formulea
 build:
-  binary_name: wb2d
+  binary: wb2d
   goos:
     - darwin
     - windows
